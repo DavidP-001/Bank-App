@@ -1,0 +1,42 @@
+.table-column{
+    -fx-background-color: #A0ACB1;
+    -fx-text-fill: #0D1A24;
+        -fx-background-insets: 0, 0 0 1 0 ;
+        -fx-background-radius: 0 ;
+
+}
+
+.testing {
+    -fx-background-color: #0D1A24;
+}
+
+.fontColor1 {
+
+-fx-text-fill: #506877;
+
+
+
+}
+
+.fontcolor2 {
+
+-fx-text-fill: #A0ACB1;
+
+
+}
+
+.text-field {
+
+    -fx-background-color: #A0ACB1;
+    -fx-text-fill: #0D1A24;
+        -fx-background-insets: 0, 0 0 1 0 ;
+        -fx-background-radius: 0 ;
+}
+
+.button {
+  -fx-background-color: #506877;
+  -fx-text-fill: #A0ACB1;
+          -fx-background-insets: 0, 0 0 1 0 ;
+          -fx-background-radius: 0 ;
+
+}

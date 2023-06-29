@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" styleClass="testing" stylesheets="@../../../CSS/stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankapp.controller.NewTransactionWindowController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Pane prefHeight="54.0" prefWidth="500.0" />
+            <Label styleClass="fontcolor2" text="Sender:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Firstname:" />
+                  <TextField fx:id="NewTransactionWindowSenderFirstnameInput" prefHeight="25.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Lastname:" />
+                  <TextField fx:id="NewTransactionWindowSenderLastnameInput" prefHeight="25.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Account ID:" />
+                  <TextField fx:id="NewTransactionWindowSenderAccountIdInput" prefHeight="25.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Value:" />
+                  <TextField fx:id="NewTransactionWindowSenderAccountIdInputValue" prefHeight="25.0" prefWidth="163.0" />
+                  <ChoiceBox fx:id="NewTransactionWindowChoiceBox" prefHeight="25.0" prefWidth="68.0" styleClass="button" />
+               </children>
+            </HBox>
+            <Pane prefHeight="47.0" prefWidth="500.0" />
+            <Label styleClass="fontcolor2" text="Receiver:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Firstname:" />
+                  <TextField fx:id="NewTransactionWindowReceiverFirstNameInput" prefHeight="25.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Lastname:" />
+                  <TextField fx:id="NewTransactionWindowReceiverLastnameInput" prefHeight="25.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="250.0" styleClass="fontcolor2" text="Account ID:" />
+                  <TextField fx:id="NewTransactionWindowReceiverAccountIdInput" prefHeight="25.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <Label fx:id="NewTransactionWindowMessage" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="506.0" styleClass="fontColor1" text="Label" />
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="NewTransactionWindowConfirmButton" mnemonicParsing="false" onAction="#NewTransactionWindowConfirmButtonPress" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+                  <Pane prefHeight="50.0" prefWidth="100.0" />
+                  <Button fx:id="NewTransactionWindowCancelButton" mnemonicParsing="false" onAction="#NewTransactionWindowCancelButtonOnPress" prefHeight="25.0" prefWidth="100.0" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
